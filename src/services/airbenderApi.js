@@ -1,5 +1,5 @@
 export const getCharacters = () => {
-  fetch('https://last-airbender-api.herokuapp.com/api/v1/characters')
+  return fetch('https://last-airbender-api.herokuapp.com/api/v1/characters')
     .then(res => {
       if(!res.ok) {
         return 'Error!';
